@@ -1,0 +1,101 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EBFFF7;
+  font-family: "Roboto Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+/* BODY */
+
+.correctAnswer, .incorrectAnswer1, .incorrectAnswer2, .incorrectAnswer3, .randomLink {
+    list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  background: transparent;
+  border: 2px solid #ada5ab;
+  border-radius: 6px;
+  padding: 20px 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  background: linear-gradient(45deg, transparent, #c4c4c4, transparent);
+  border-radius: 6px;
+}
+
+.choices, .difficulty, .category, .question {
+    border: 3px solid black;
+    width: 450px;
+    border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.choices {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.difficulty {
+    text-transform: capitalize ;
+}
+
+.container div {
+  padding: 10px;
+}
+
+.guess {
+    /* background: none; */
+    border: 4px solid #574949;
+    font-family: inherit;
+    color: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 25rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    width: 190px;
+    height: 55px;
+  }
